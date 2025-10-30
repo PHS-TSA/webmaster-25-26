@@ -1,0 +1,33 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.2/schema.json",
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "linter": {
+    "domains": {
+      "react": "all",
+      "project": "recommended"
+    },
+    "rules": {
+      "nursery": {
+        "noFloatingPromises": "error",
+        "noMisusedPromises": "error",
+        "noEmptySource": "error",
+        "noImportCycles": "error",
+        "noShadow": "error",
+        "noUnusedExpressions": "error",
+        "noUnnecessaryConditions": "error",
+        "noUselessCatchBinding": "error",
+        "noUselessUndefined": "error",
+        "useExhaustiveSwitchCases": "error",
+        "useSortedClasses": "error"
+      }
+    }
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "defaultBranch": "main"
+  }
+}
