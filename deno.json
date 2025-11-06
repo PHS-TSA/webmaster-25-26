@@ -41,7 +41,7 @@
   },
   "lint": {
     "rules": {
-      "tags": ["fresh", "recommended"]
+      "tags": ["fresh"]
     }
   },
   "fmt": {
