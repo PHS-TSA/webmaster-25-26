@@ -4,7 +4,9 @@ Webmaster for the 2025–2026 school year.
 
 ## Topic
 
-> "Community Resource Hub"
+This year’s theme is as follows:
+
+> ### Community Resource Hub
 >
 > Create a website that will serve as a community resource hub
 > to highlight resources available to residents within the community
@@ -17,7 +19,7 @@ Webmaster for the 2025–2026 school year.
 >
 > - an interactive directory of community resources (resource hub)
 >   that allows users to search and filter the resources.
-> - a highlight section that spotlightsat least three of the community resources
+> - a highlight section that spotlights at least three of the community resources
 >   you have listed in your resource hub.
 > - a form that users can submit to indicate new resources
 >   that should be added to the community resources hub.
