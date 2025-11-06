@@ -8,5 +8,5 @@ export interface ButtonProps {
 }
 
 export function Button(props: ButtonProps) {
-  return <button className="btn btn-dash btn-primary" {...props} />;
+  return <button class="btn btn-dash btn-primary" {...props} />;
 }

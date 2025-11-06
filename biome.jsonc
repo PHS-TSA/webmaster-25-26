@@ -21,6 +21,12 @@
         "noUselessUndefined": "error",
         "useExhaustiveSwitchCases": "error",
         "useSortedClasses": "error"
+      },
+      "style": {
+        "noMagicNumbers": "error"
+      },
+      "suspicious": {
+        "noReactSpecificProps": "error"
       }
     }
   },

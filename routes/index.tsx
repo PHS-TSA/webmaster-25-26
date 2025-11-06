@@ -3,8 +3,10 @@ import { Head } from "fresh/runtime";
 import Counter from "../islands/Counter.tsx";
 import { define } from "../utils.ts";
 
+const initialCount = 3;
+
 export default define.page(function Home() {
-  const count = useSignal(3);
+  const count = useSignal(initialCount);
 
   return (
     <div class="fresh-gradient mx-auto min-h-screen px-4 py-8">
