@@ -1,0 +1,6 @@
+{
+  "config": {
+    "line-length": false, // We use SemBr.
+    "no-emphasis-as-heading": false // Too many false positives.
+  }
+}

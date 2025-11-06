@@ -4,7 +4,7 @@ Webmaster for the 2025–2026 school year.
 
 ## Topic
 
-This year’s theme is as follows:
+This year’s [theme][themes-and-problems] is as follows:
 
 > ### Community Resource Hub
 >
@@ -24,3 +24,5 @@ This year’s theme is as follows:
 > - a form that users can submit to indicate new resources
 >   that should be added to the community resources hub.
 > - additional content to enhance the community resource hub for end users.
+
+[themes-and-problems]: https://tsaweb.org/competitions/themes-and-problems
