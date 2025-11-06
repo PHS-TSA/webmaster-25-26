@@ -1,6 +1,6 @@
 import type { Signal } from "@preact/signals";
 import { useId } from "preact/hooks";
-import { Button } from "../components/Button.tsx";
+import { Button } from "@/components/Button.tsx";
 
 interface CounterProps {
   readonly count: Signal<number>;

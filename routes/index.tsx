@@ -1,11 +1,11 @@
 import { useSignal } from "@preact/signals";
 import { Head } from "fresh/runtime";
-import Counter from "../islands/Counter.tsx";
-import { define } from "../utils.ts";
+import Counter from "@/islands/Counter.tsx";
+import { define } from "@/utils.ts";
 
 const initialCount = 3;
 
-export default define.page(function Home() {
+export default define.page(() => {
   const count = useSignal(initialCount);
 
   return (
