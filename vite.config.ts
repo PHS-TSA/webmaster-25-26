@@ -4,4 +4,11 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [fresh(), tailwindcss()],
+  build: {
+    cssMinify: "lightningcss",
+  },
+  css: {
+    devSourcemap: true,
+    transformer: "lightningcss",
+  },
 });
