@@ -9,7 +9,7 @@ export default define.page(() => {
   const count = useSignal(initialCount);
 
   return (
-    <div class="fresh-gradient mx-auto min-h-screen px-4 py-8">
+    <div class="mx-auto min-h-screen px-4 py-8">
       <Head>
         <title>Fresh counter</title>
       </Head>
