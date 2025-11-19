@@ -11,21 +11,18 @@ export default define.page(() => {
   return (
     <div class="mx-auto min-h-screen px-4 py-8">
       <Head>
-        <title>Fresh counter</title>
+        <title>Bridgeton Resources</title>
       </Head>
       <div class="mx-auto flex max-w-3xl flex-col items-center justify-center">
         <img
           class="my-6"
-          src="/logo.svg"
+          src="/images/image.png"
           width="128"
           height="128"
           alt="the Fresh logo: a sliced lemon dripping with juice"
         />
-        <h1 class="font-bold text-4xl">Welcome to Fresh</h1>
-        <p class="my-4">
-          Try updating this message in the
-          <code class="mx-2">./routes/index.tsx</code> file, and refresh.
-        </p>
+        <h1 class="font-bold text-4xl">Bridgeton Resource Directory</h1>
+
         <Counter count={count} />
       </div>
     </div>

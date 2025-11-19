@@ -1,8 +1,7 @@
 import { define } from "@/utils.ts";
 
 export default define.page(({ Component }) => (
-  <div class="fresh-gradient">
-    <span class="text-red-600">Lol!</span>
+  <div class="bg-base-400 dark:bg-base-600">
     <Component />
   </div>
 ));

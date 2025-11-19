@@ -11,4 +11,7 @@ export default defineConfig({
     devSourcemap: true,
     transformer: "lightningcss",
   },
+  resolve: {
+    dedupe: ["preact", "@preact/signals", "@preact/signals-core"],
+  },
 });
