@@ -26,13 +26,13 @@
   "[yaml]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
-  "css.customData": [".vscode/tailwind.json"],
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.biome": "explicit",
     "source.organizeImports.biome": "explicit"
   },
   "files.associations": {
-    "deno.json": "jsonc"
+    "deno.json": "jsonc",
+    "*.css": "tailwindcss"
   }
 }
