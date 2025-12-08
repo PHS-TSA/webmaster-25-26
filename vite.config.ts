@@ -14,4 +14,9 @@ export default defineConfig({
   resolve: {
     dedupe: ["preact", "@preact/signals", "@preact/signals-core"],
   },
+  server: {
+    watch: {
+      ignored: ["**/.jj/**"],
+    },
+  },
 });
