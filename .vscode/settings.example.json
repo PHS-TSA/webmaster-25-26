@@ -34,5 +34,6 @@
   "files.associations": {
     "deno.json": "jsonc",
     "*.css": "tailwindcss"
-  }
+  },
+  "biome.lsp.bin": "./node_modules/@biomejs/biome/bin/biome"
 }
