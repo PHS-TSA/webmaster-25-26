@@ -2,4 +2,6 @@
 @plugin "daisyui" {
   /* biome-ignore lint/correctness/noUnknownProperty: Tailwind-specific. */
   exclude: properties;
+  /* biome-ignore lint/correctness/noUnknownProperty: Tailwind-specific. */
+  logs: false;
 }

@@ -61,6 +61,7 @@
     "@preact/signals": "npm:@preact/signals@^2.5.1",
     "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.0.8",
     "vite": "npm:vite@^7.2.7",
+    "vite-imagetools": "npm:vite-imagetools@9.0.2",
     "tailwindcss": "npm:tailwindcss@^4.1.17",
     "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.17"
   },

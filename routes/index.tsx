@@ -19,7 +19,7 @@ export default define.page(() => {
           src="/images/image.png"
           width="128"
           height="128"
-          alt="the Fresh logo: a sliced lemon dripping with juice"
+          alt="the City of Bridgeton logo: a stylized capital B."
         />
         <h1 class="font-bold text-4xl">Bridgeton Resource Directory</h1>
 
