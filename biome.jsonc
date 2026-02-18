@@ -1,24 +1,20 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.8/schema.json",
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "formatter": {
     "indentStyle": "space"
   },
   "linter": {
     "domains": {
       "react": "all",
-      "project": "recommended"
+      "project": "recommended",
+      "types": "none"
     },
     "rules": {
       "nursery": {
         "noFloatingPromises": "error",
         "noMisusedPromises": "error",
-        "noEmptySource": "error",
-        "noImportCycles": "error",
         "noShadow": "error",
-        "noUnusedExpressions": "error",
         "noUnnecessaryConditions": "error",
-        "noUselessCatchBinding": "error",
-        "noUselessUndefined": "error",
         "useExhaustiveSwitchCases": "error",
         "useSortedClasses": {
           "fix": "safe",
@@ -29,7 +25,14 @@
         "noMagicNumbers": "error"
       },
       "suspicious": {
-        "noReactSpecificProps": "error"
+        "noReactSpecificProps": "error",
+        "noEmptySource": "error",
+        "noImportCycles": "error",
+        "noUnusedExpressions": "error"
+      },
+      "complexity": {
+        "noUselessCatchBinding": "error",
+        "noUselessUndefined": "error"
       }
     }
   },

@@ -22,17 +22,17 @@
     "fmt": {
       "dependencies": ["fix:biome:fmt", "fix:deno:fmt"]
     },
-    "check:biome": "deno run -A npm:@biomejs/biome check --formatter-enabled=false",
-    "check:biome:ci": "deno run -A npm:@biomejs/biome ci",
-    "check:biome:fmt": "deno run -A npm:@biomejs/biome format",
+    "check:biome": "deno x biome check --formatter-enabled=false",
+    "check:biome:ci": "deno x biome ci",
+    "check:biome:fmt": "deno x biome format",
     "check:deno:lint": "deno lint",
     "check:deno:fmt": "deno fmt --check",
     "check:deno:types": "deno check",
     "fix": {
       "dependencies": ["fix:biome", "fix:deno:lint", "fix:deno:fmt"]
     },
-    "fix:biome": "deno run -A npm:@biomejs/biome check --write --unsafe --formatter-enabled=false",
-    "fix:biome:fmt": "deno run -A npm:@biomejs/biome format --write",
+    "fix:biome": "deno x biome check --write --unsafe --formatter-enabled=false",
+    "fix:biome:fmt": "deno x biome format --write",
     "fix:deno:lint": "deno lint --fix",
     "fix:deno:fmt": "deno fmt",
     "dev": "vite",
@@ -52,18 +52,19 @@
   "exclude": ["**/_fresh/*"],
   "imports": {
     "@/": "./",
-    "@biomejs/biome": "npm:@biomejs/biome@^2.3.8",
-    "@std/http": "jsr:@std/http@^1.0.22",
+    "@biomejs/biome": "npm:@biomejs/biome@^2.4.2",
+    "@std/http": "jsr:@std/http@^1.0.24",
     "@types/babel__core": "npm:@types/babel__core@^7.20.5",
-    "daisyui": "npm:daisyui@^5.5.8",
+    "@types/node": "npm:@types/node@^25.2.3",
+    "daisyui": "npm:daisyui@^5.5.18",
     "fresh": "jsr:@fresh/core@^2.2.0",
-    "preact": "npm:preact@^10.28.0",
-    "@preact/signals": "npm:@preact/signals@^2.5.1",
+    "preact": "npm:preact@^10.28.3",
+    "@preact/signals": "npm:@preact/signals@^2.8.1",
     "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.0.8",
-    "vite": "npm:vite@^7.2.7",
-    "vite-imagetools": "npm:vite-imagetools@9.0.2",
-    "tailwindcss": "npm:tailwindcss@^4.1.17",
-    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.17"
+    "vite": "npm:vite@^7.3.1",
+    "vite-imagetools": "npm:vite-imagetools@9.0.3",
+    "tailwindcss": "npm:tailwindcss@^4.2.0",
+    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.2.0"
   },
   "compilerOptions": {
     "lib": ["dom", "dom.asynciterable", "dom.iterable", "deno.ns"],
