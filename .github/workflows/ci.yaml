@@ -22,7 +22,7 @@ defaults:
     shell: bash
 
 env:
-  DENO_VERSION: v2.5.6
+  DENO_VERSION: v2.7.5
 
 jobs:
   deploy:
