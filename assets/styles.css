@@ -3,3 +3,79 @@
   exclude: properties;
   logs: false;
 }
+
+@layer components {
+  .carousel-scroll {
+    scroll-snap-type: x mandatory;
+    list-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > .carousel-item {
+      scroll-snap-align: center;
+      flex: 0 0 min(100%, 20rem);
+    }
+
+    &::scroll-button(*) {
+      @apply btn btn-circle btn-sm absolute top-1/2 z-10 aspect-square shrink-0 -translate-y-1/2 opacity-80 hover:opacity-100;
+
+      &:hover {
+        background: oklch(93% 0 0);
+      }
+      &:disabled {
+        opacity: 0.3;
+        cursor: default;
+      }
+    }
+
+    &::scroll-button(inline-start) {
+      content: "◂" / "scroll left";
+
+      @apply left-1;
+    }
+
+    &::scroll-button(inline-end) {
+      content: "▸" / "scroll right";
+
+      @apply right-1;
+    }
+  }
+}
+
+@plugin "daisyui/theme" {
+  name: "corporate";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: oklch(93% 0 0);
+  --color-base-300: oklch(86% 0 0);
+  --color-base-content: oklch(22.389% 0.031 278.072);
+  --color-primary: oklch(30.66% 0.189 267.37);
+  --color-primary-content: oklch(100% 0 0);
+  --color-secondary: oklch(55% 0.046 257.417);
+  --color-secondary-content: oklch(100% 0 0);
+  --color-accent: oklch(81.20% 0.165 95.09);
+  --color-accent-content: oklch(100% 0 0);
+  --color-neutral: oklch(25.20% 0 0);
+  --color-neutral-content: oklch(100% 0 0);
+  --color-info: oklch(60% 0.126 221.723);
+  --color-info-content: oklch(100% 0 0);
+  --color-success: oklch(62% 0.194 149.214);
+  --color-success-content: oklch(100% 0 0);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(100% 0 0);
+  --color-error: oklch(70% 0.191 22.216);
+  --color-error-content: oklch(0% 0 0);
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 1;
+}
