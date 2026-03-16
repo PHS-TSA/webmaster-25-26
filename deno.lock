@@ -40,11 +40,11 @@
     "npm:@opentelemetry/api@^1.9.0": "1.9.0",
     "npm:@preact/signals@^2.2.1": "2.8.1_preact@10.28.3",
     "npm:@preact/signals@^2.8.1": "2.8.1_preact@10.28.3",
-    "npm:@prefresh/vite@^2.4.8": "2.4.12_preact@10.28.3_vite@7.3.1__@types+node@25.2.3__picomatch@4.0.3_@types+node@25.2.3",
-    "npm:@schedule-x/calendar@^4.3.1": "4.3.1_@preact+signals@2.8.1__preact@10.28.3_preact@10.28.3_temporal-polyfill@0.3.2",
-    "npm:@schedule-x/preact@^3.3.0": "3.3.0_@schedule-x+calendar@4.3.1__@preact+signals@2.8.1___preact@10.28.3__preact@10.28.3__temporal-polyfill@0.3.2_preact@10.28.3_@preact+signals@2.8.1__preact@10.28.3_temporal-polyfill@0.3.2",
-    "npm:@schedule-x/theme-default@^4.3.1": "4.3.1",
-    "npm:@tailwindcss/vite@^4.2.0": "4.2.0_vite@7.3.1__@types+node@25.2.3__picomatch@4.0.3_@types+node@25.2.3",
+    "npm:@prefresh/vite@^2.4.8": "2.4.12_preact@10.28.3_vite@7.3.1__@types+node@25.2.3",
+    "npm:@schedule-x/calendar@^3.7.3": "3.7.3_@preact+signals@2.8.1__preact@10.28.3_preact@10.28.3_temporal-polyfill@0.3.2",
+    "npm:@schedule-x/preact@^3.3.0": "3.3.0_@schedule-x+calendar@3.7.3__@preact+signals@2.8.1___preact@10.28.3__preact@10.28.3__temporal-polyfill@0.3.2_preact@10.28.3_@preact+signals@2.8.1__preact@10.28.3_temporal-polyfill@0.3.2",
+    "npm:@schedule-x/theme-default@^3.7.3": "3.7.3",
+    "npm:@tailwindcss/vite@^4.2.0": "4.2.0_vite@7.3.1__@types+node@25.2.3_@types+node@25.2.3",
     "npm:@types/babel__core@^7.20.5": "7.20.5",
     "npm:@types/node@^25.2.3": "25.2.3",
     "npm:daisyui@^5.5.18": "5.5.18",
@@ -60,8 +60,8 @@
     "npm:tailwindcss@^4.2.0": "4.2.0",
     "npm:temporal-polyfill@~0.3.2": "0.3.2",
     "npm:vite-imagetools@9.0.3": "9.0.3_rollup@4.57.1",
-    "npm:vite@^7.1.4": "7.3.1_@types+node@25.2.3_picomatch@4.0.3",
-    "npm:vite@^7.3.1": "7.3.1_@types+node@25.2.3_picomatch@4.0.3"
+    "npm:vite@^7.1.4": "7.3.1_@types+node@25.2.3",
+    "npm:vite@^7.3.1": "7.3.1_@types+node@25.2.3"
   },
   "jsr": {
     "@deno/esbuild-plugin@1.2.1": {
@@ -1055,7 +1055,7 @@
     "@prefresh/utils@1.2.1": {
       "integrity": "sha512-vq/sIuN5nYfYzvyayXI4C2QkprfNaHUQ9ZX+3xLD8nL3rWyzpxOm1+K7RtMbhd+66QcaISViK7amjnheQ/4WZw=="
     },
-    "@prefresh/vite@2.4.12_preact@10.28.3_vite@7.3.1__@types+node@25.2.3__picomatch@4.0.3_@types+node@25.2.3": {
+    "@prefresh/vite@2.4.12_preact@10.28.3_vite@7.3.1__@types+node@25.2.3": {
       "integrity": "sha512-FY1fzXpUjiuosznMV0YM7XAOPZjB5FIdWS0W24+XnlxYkt9hNAwwsiKYn+cuTEoMtD/ZVazS5QVssBr9YhpCQA==",
       "dependencies": [
         "@babel/core",
@@ -1211,23 +1211,23 @@
       "os": ["win32"],
       "cpu": ["x64"]
     },
-    "@schedule-x/calendar@4.3.1_@preact+signals@2.8.1__preact@10.28.3_preact@10.28.3_temporal-polyfill@0.3.2": {
-      "integrity": "sha512-lArCIoRmTXLrJcq9VDKLfo1E3h8AwWLXvkEQt3o7rhc8qp9py4xfyjGMBP635eYzRoe3q9iaOS+WzglMz8EefQ==",
+    "@schedule-x/calendar@3.7.3_@preact+signals@2.8.1__preact@10.28.3_preact@10.28.3_temporal-polyfill@0.3.2": {
+      "integrity": "sha512-plVdesJSaz5I2ukAoIqgC6Dro4UkbQZvMll2OEdoSURgUX9Hk5abCHV4S2O/+8oRvmEX4wXQeHIapYYIY8/GIg==",
       "dependencies": [
         "@preact/signals",
         "preact",
         "temporal-polyfill"
       ]
     },
-    "@schedule-x/preact@3.3.0_@schedule-x+calendar@4.3.1__@preact+signals@2.8.1___preact@10.28.3__preact@10.28.3__temporal-polyfill@0.3.2_preact@10.28.3_@preact+signals@2.8.1__preact@10.28.3_temporal-polyfill@0.3.2": {
+    "@schedule-x/preact@3.3.0_@schedule-x+calendar@3.7.3__@preact+signals@2.8.1___preact@10.28.3__preact@10.28.3__temporal-polyfill@0.3.2_preact@10.28.3_@preact+signals@2.8.1__preact@10.28.3_temporal-polyfill@0.3.2": {
       "integrity": "sha512-oVbAjrbBs59FxrNRZkN/r2d5uhH4DsbGzCKNG4Y6nTAZT6DQppEN0Bj7xnQbq9ZmqisFIIEwr5fjREvPT90TRQ==",
       "dependencies": [
         "@schedule-x/calendar",
         "preact"
       ]
     },
-    "@schedule-x/theme-default@4.3.1": {
-      "integrity": "sha512-EVJulV9e3DH91j6Hfw8ZIh2kfqi1Juc1155LSz+9BO7S9K1GLaVBZqO413FCI/pPP+rHRE0nuhB/3iS+BidUUA=="
+    "@schedule-x/theme-default@3.7.3": {
+      "integrity": "sha512-suJs+AyQT6OhTq7e752Psg5IwaGE4EzPOSBhp7L8e9FgmluxOvnzlfbWod2i9mfYAsdkzX+WMIlCfBFkRu1o1A=="
     },
     "@tailwindcss/node@4.2.0": {
       "integrity": "sha512-Yv+fn/o2OmL5fh/Ir62VXItdShnUxfpkMA4Y7jdeC8O81WPB8Kf6TT6GSHvnqgSwDzlB5iT7kDpeXxLsUS0T6Q==",
@@ -1317,7 +1317,7 @@
         "@tailwindcss/oxide-win32-x64-msvc"
       ]
     },
-    "@tailwindcss/vite@4.2.0_vite@7.3.1__@types+node@25.2.3__picomatch@4.0.3_@types+node@25.2.3": {
+    "@tailwindcss/vite@4.2.0_vite@7.3.1__@types+node@25.2.3_@types+node@25.2.3": {
       "integrity": "sha512-da9mFCaHpoOgtQiWtDGIikTrSpUFBtIZCG3jy/u2BGV+l/X1/pbxzmIUxNt6JWm19N3WtGi4KlJdSH/Si83WOA==",
       "dependencies": [
         "@tailwindcss/node",
@@ -1778,7 +1778,7 @@
     "temporal-spec@0.3.1": {
       "integrity": "sha512-B4TUhezh9knfSIMwt7RVggApDRJZo73uZdj8AacL2mZ8RP5KtLianh2MXxL06GN9ESYiIsiuoLQhgVfwe55Yhw=="
     },
-    "tinyglobby@0.2.15_picomatch@4.0.3": {
+    "tinyglobby@0.2.15": {
       "integrity": "sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==",
       "dependencies": [
         "fdir",
@@ -1808,7 +1808,7 @@
         "sharp"
       ]
     },
-    "vite@7.3.1_@types+node@25.2.3_picomatch@4.0.3": {
+    "vite@7.3.1_@types+node@25.2.3": {
       "integrity": "sha512-w+N7Hifpc3gRjZ63vYBXA56dvvRlNWRczTdmCBBa+CotUzAPf5b7YMdMR/8CQoeYE5LX3W4wj6RYTgonm1b9DA==",
       "dependencies": [
         "@types/node",
@@ -1839,9 +1839,9 @@
       "npm:@biomejs/biome@^2.4.2",
       "npm:@floating-ui/dom@^1.7.6",
       "npm:@preact/signals@^2.8.1",
-      "npm:@schedule-x/calendar@^4.3.1",
+      "npm:@schedule-x/calendar@^3.7.3",
       "npm:@schedule-x/preact@^3.3.0",
-      "npm:@schedule-x/theme-default@^4.3.1",
+      "npm:@schedule-x/theme-default@^3.7.3",
       "npm:@tailwindcss/vite@^4.2.0",
       "npm:@types/babel__core@^7.20.5",
       "npm:@types/node@^25.2.3",

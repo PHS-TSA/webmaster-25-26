@@ -10,7 +10,7 @@ export default define.page(() => {
       <main class="mx-auto flex max-w-3xl flex-col items-center justify-center">
         <h1 class="font-bold text-4xl">About the City of Bridgeton</h1>
         <p>
-          Ever since we were founded in 18??, The city has been dedicated to
+          Ever since we were founded in 1794, The city has been dedicated to
           helping ensure that our valued citizens always able to make ends meet!
         </p>
       </main>

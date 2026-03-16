@@ -2,8 +2,8 @@ import { Head } from "fresh/runtime";
 import { ChevronsRight } from "lucide-preact";
 import { CarouselItem } from "@/components/Carousel.tsx";
 import { ResourceCard } from "@/components/ResourceCard.tsx";
-import Carousel from "@/islands/Carousel.tsx";
 import { define } from "@/utils.ts";
+import Carousel from "../components/Carousel.tsx";
 
 export default define.page(() => {
   return (
