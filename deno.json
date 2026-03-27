@@ -68,7 +68,6 @@
     "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.0.8",
     "temporal-polyfill": "npm:temporal-polyfill@^0.3.2",
     "vite": "npm:vite@^7.3.1",
-    "vite-imagetools": "npm:vite-imagetools@9.0.3",
     "tailwindcss": "npm:tailwindcss@^4.2.0",
     "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.2.0"
   },
