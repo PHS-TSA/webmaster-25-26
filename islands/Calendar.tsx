@@ -9,7 +9,7 @@ import { ScheduleXCalendar, useCalendarApp } from "@schedule-x/preact";
 import { IS_BROWSER } from "fresh/runtime";
 
 export default function Calendar() {
-  if (!IS_BROWSER) return <></>;
+  if (!IS_BROWSER) return null;
 
   // deno-lint-ignore react-rules-of-hooks
   const calendar = useCalendarApp({
@@ -18,44 +18,44 @@ export default function Calendar() {
       {
         id: "1",
         title: "Community Clean-Up Day",
-        start: Temporal.PlainDate.from("2026-03-21"),
-        end: Temporal.PlainDate.from("2026-03-21"),
+        start: Temporal.PlainDate.from("2026-04-12"),
+        end: Temporal.PlainDate.from("2026-04-12"),
       },
       {
         id: "2",
-        title: "Town Hall Meeting",
-        start: Temporal.PlainDate.from("2026-03-18 18:00"),
-        end: Temporal.PlainDate.from("2026-03-18 20:00"),
+        title: "Town Hall Resource Night",
+        start: Temporal.ZonedDateTime.from(
+          "2026-04-18T18:00-05:00[America/Chicago]",
+        ),
+        end: Temporal.ZonedDateTime.from(
+          "2026-04-18T20:00-05:00[America/Chicago]",
+        ),
       },
       {
         id: "3",
-        title: "Spring Festival",
-        start: Temporal.PlainDate.from("2026-03-21"),
-        end: Temporal.PlainDate.from("2026-03-22"),
+        title: "Library Book Sale and Sign-Up Drive",
+        start: Temporal.ZonedDateTime.from(
+          "2026-04-25T10:00-05:00[America/Chicago]",
+        ),
+        end: Temporal.ZonedDateTime.from(
+          "2026-04-25T14:00-05:00[America/Chicago]",
+        ),
       },
       {
         id: "4",
-        title: "Youth Soccer Registration",
-        start: Temporal.PlainDate.from("2026-03-25 09:00"),
-        end: Temporal.PlainDate.from("2026-03-25 12:00"),
-      },
-      {
-        id: "5",
-        title: "Library Book Sale",
-        start: Temporal.PlainDate.from("2026-03-28"),
-        end: Temporal.PlainDate.from("2026-03-29"),
-      },
-      {
-        id: "6",
-        title: "Farmers Market Opening",
-        start: Temporal.PlainDate.from("2026-04-04 08:00"),
-        end: Temporal.PlainDate.from("2026-04-04 13:00"),
+        title: "Neighborhood Safety Workshop",
+        start: Temporal.ZonedDateTime.from(
+          "2026-05-02T11:00-05:00[America/Chicago]",
+        ),
+        end: Temporal.ZonedDateTime.from(
+          "2026-05-02T13:00-05:00[America/Chicago]",
+        ),
       },
     ],
   });
 
   return (
-    <div class="h-200 max-h-[90vh] w-full max-w-4xl">
+    <div class="h-full w-full max-w-4xl">
       <ScheduleXCalendar calendarApp={calendar} />
     </div>
   );

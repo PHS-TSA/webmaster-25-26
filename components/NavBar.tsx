@@ -1,25 +1,34 @@
 import type { JSX } from "preact";
 
+const links = [
+  { href: "/resources", label: "Directory" },
+  { href: "/calendar", label: "Events" },
+  { href: "/form", label: "Suggest a Resource" },
+  { href: "/references", label: "References" },
+];
+
 export function NavBar(): JSX.Element {
   return (
-    <nav class="@container flex flex-col items-center bg-primary px-8 py-4 text-primary-content sm:flex-row">
-      <a href="/">
-        <img
-          class="size-14"
-          src="/images/image.png"
-          width="128"
-          height="128"
-          alt="the City of Bridgeton logo: a stylized capital B."
-        />
-      </a>
-      <div class="grow"></div>
-
-      <div class="flex items-center @2xs:gap-8 @xs:gap-12 gap-4 bg-primary text-primary-content">
-        <a class="ml-auto" href="/calendar">
-          Upcoming
+    <nav class="sticky top-0 z-20 border-base-300 border-b bg-base-100/90 px-4 py-4 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <a class="flex flex-col" href="/">
+          <span class="font-semibold text-primary text-sm">Bridgeton</span>
+          <span class="text-nowrap font-bold text-2xl text-base-content">
+            Community Hub
+          </span>
         </a>
-        <a href="/about">About Us</a>
-        <a href="/resources">Resources</a>
+
+        <div class="flex flex-wrap items-center gap-4 text-sm sm:justify-end">
+          {links.map((link) => (
+            <a
+              key={link.href}
+              class="px-3 py-2 transition hover:bg-base-200 aria-[current]:not-hover:bg-base-200"
+              href={link.href}
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
       </div>
     </nav>
   );

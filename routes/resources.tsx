@@ -1,38 +1,25 @@
-import type { JSX } from "preact";
+import { Head } from "fresh/runtime";
+import ResourceDirectory from "@/islands/ResourceDirectory.tsx";
 import { define } from "@/utils.ts";
-
-interface Resource {
-  href: string;
-  imageSrc: string;
-  imageAlt: string;
-  blurb: string;
-}
-
-const resources: Resource[] = [
-  {
-    href: "https://nih.gov",
-    imageSrc: "",
-    imageAlt: "",
-    blurb:
-      "The NIH is essential for knowing your latest health research. Check in weekly to stay up-to-date on the latest vaccine information.",
-  },
-];
 
 export default define.page(() => {
   return (
-    <div>
-      {resources.map((resource) => (
-        <Resource key={resource.href} {...resource} />
-      ))}
-    </div>
+    <>
+      <Head>
+        <title>Resource Directory | Bridgeton Community Hub</title>
+      </Head>
+
+      <main class="mx-auto min-h-screen max-w-6xl px-4 py-8">
+        <header class="space-y-4 px-6 py-8">
+          <h1 class="max-w-3xl font-bold text-4xl">
+            Search and filter community resources
+          </h1>
+        </header>
+
+        <section class="mt-10">
+          <ResourceDirectory />
+        </section>
+      </main>
+    </>
   );
 });
-
-function Resource({ imageSrc, imageAlt, blurb }: Resource): JSX.Element {
-  return (
-    <div class="card h-full shadow-md">
-      <img src={imageSrc} alt={imageAlt} />
-      <p>{blurb}</p>
-    </div>
-  );
-}

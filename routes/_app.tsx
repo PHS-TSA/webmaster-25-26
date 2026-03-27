@@ -5,7 +5,7 @@ export default define.page(({ Component }) => (
     <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Bridgeton Resources</title>
+      <title>Bridgeton Community Hub</title>
       <link rel="icon" type="image/x-icon" href="/images/image.png" />
     </head>
     <body>

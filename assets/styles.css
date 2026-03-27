@@ -54,6 +54,7 @@
       flex: 0 0 min(100%, 20rem);
     }
 
+    /** biome-ignore lint/correctness/noUnknownPseudoElement: scroll-button isn't baseline yet. */
     &::scroll-button(*) {
       @apply btn btn-circle btn-sm absolute top-1/2 z-10 aspect-square shrink-0 -translate-y-1/2 opacity-80 hover:opacity-100;
 
@@ -66,12 +67,14 @@
       }
     }
 
+    /** biome-ignore lint/correctness/noUnknownPseudoElement: scroll-button isn't baseline yet. */
     &::scroll-button(inline-start) {
       content: "◂" / "scroll left";
 
       @apply left-1;
     }
 
+    /** biome-ignore lint/correctness/noUnknownPseudoElement: scroll-button isn't baseline yet. */
     &::scroll-button(inline-end) {
       content: "▸" / "scroll right";
 
